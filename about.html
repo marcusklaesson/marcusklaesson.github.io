@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8240efc71f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Coded by Marcus Klaesson -->
+
     <title>Marcus Klaesson | Om</title>
     <style>
         body {
@@ -14,19 +18,23 @@
         }
 
         p {
-            font-size: 25px;
-            font-family: serif;
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
             margin: 0em;
 
         }
 
         ul {
-            font-size: 25px;
+            font-size: 1.5rem;
             line-height: 1.2;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid black;
+            width: 280px;
+
         }
 
         fieldset {
-            background-color: white;
+            background-image: linear-gradient(180deg, #E6E6E6, #FF8552);
             width: 1000px;
             border: 5px solid black;
 
@@ -71,31 +79,31 @@
             color: rgba(128, 128, 128, 0.5);
         }
 
-        #start {
+        .start {
             font-style: italic;
             float: right;
             margin-right: 700px;
             margin-top: -100px;
-            font-size: 35px;
+            font-size: 2.2em;
             text-decoration: none;
 
         }
 
-        #about {
+        .about {
             font-style: italic;
             float: right;
             margin-right: 630px;
             margin-top: -118px;
-            font-size: 35px;
+            font-size: 2.2em;
             text-decoration: none;
         }
 
-        #cv {
+        .cv {
             font-style: italic;
             float: right;
             margin-right: 565px;
             margin-top: -137px;
-            font-size: 35px;
+            font-size: 2.2em;
             text-decoration: none;
         }
 
@@ -113,24 +121,26 @@
             }
 
             body {
-                margin: 0em
+                margin: 0em;
+
+
             }
 
-            #start {
+            .start {
                 font-style: italic;
                 margin-top: -20px;
                 font-size: 35px;
                 text-decoration: none;
             }
 
-            #about {
+            .about {
                 font-style: italic;
                 margin-top: -40px;
                 font-size: 35px;
                 text-decoration: none;
             }
 
-            #cv {
+            .cv {
                 font-style: italic;
                 margin-top: -58px;
                 font-size: 35px;
@@ -171,33 +181,35 @@
         <a href="https://github.com/marcusklaesson?tab=repositories" target="_blank">
             <i id="github" class="fab fa-github-square fa-3x" target="_blank"></i> <br></a>
 
+        <span>
+            <a class="start" href="index.html"><strong>Start</strong></a> <br>
+            <a class="about" href="about.html"><strong>Om</strong></a> <br>
+            <a class="cv" href="cv.html"><strong>CV</strong></a>
+        </span>
 
-        <a id="start" href="index.html"><strong>Start</strong></a> <br>
-        <a id="about" href="about.html"><strong>Om</strong></a> <br>
-        <a id="cv" href="cv.html"><strong>CV</strong></a>
-
-
-        <p><strong>Marcus Klaesson</strong> heter jag och är 28år från <br class="line"> Göteborg.
-            Jag studerar till Apputvecklare för <br class="line"> Android & IOS och gör min andra termin på <br
-                class="line"> IT-högskolan i
-            Mölndal.
-        </p>
-        <p>Följande kurser har jag slutfört:</p>
-        <ul>
-            <li>Androidutveckling (Java)</li>
-            <li>Swift</li>
-            <li>Objective-C</li>
-            <li>Projektstyrning</li>
-            <li>Databashantering (SQL)</li>
-        </ul>
-        <p>I skrivande stund arbetar jag med att gå <br class="line"> igenom HTML, CSS och Javascript.</p>
-        <p>Jag har även ett sidoprojekt som jag gör <br class="line"> tillsammans med en vän, en receptbank där <br
-                class="line"> man ska kunna
-            lägga
-            in
-            sina egna matrecept. <br class="line"> Kodningen för appen sker just nu med Swift <br class="line"> för
-            IOS
-            och Java för Android.</p>
+        <div>
+            <p><strong>Marcus Klaesson</strong> heter jag och är 28år från <br class="line"> Göteborg.
+                Jag studerar till Apputvecklare för <br class="line"> Android & IOS och gör min andra termin på <br
+                    class="line"> IT-högskolan i
+                Mölndal.
+            </p>
+            <p>Följande kurser har jag slutfört:</p>
+            <ul>
+                <li>Androidutveckling (Java)</li>
+                <li>Swift</li>
+                <li>Objective-C</li>
+                <li>Projektstyrning</li>
+                <li>Databashantering (SQL)</li>
+            </ul>
+            <p>I skrivande stund arbetar jag med att gå <br class="line"> igenom HTML, CSS och Javascript.</p>
+            <p>Jag har även ett sidoprojekt som jag gör <br class="line"> tillsammans med en vän, en receptbank där <br
+                    class="line"> man ska kunna
+                lägga
+                in
+                sina egna matrecept. <br class="line"> Kodningen för appen sker just nu med Swift <br class="line"> för
+                IOS
+                och Java för Android.</p>
+        </div>
 
     </fieldset>
 </body>
