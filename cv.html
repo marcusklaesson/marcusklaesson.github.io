@@ -5,32 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8240efc71f.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Source+Code+Pro&|Robotodisplay=swap" rel="stylesheet">
+
+    <!-- Coded by Marcus Klaesson -->
+
     <title>Marcus Klaesson | CV</title>
     <style>
-        p {
-            font-size: 2em;
-            font-style: normal;
+        div {
+            margin-top: -50px;
         }
 
-        ul {
-            font-size: 1.5em;
+        div h1 {
+            font-family: 'Source Code Pro', monospace;
+            margin-left: 240px;
+            margin-bottom: -100px;
+            font-size: 50px;
+
+        }
+
+        body {
+            background-image: url('./images/business-computer-contemporary-desk-218863 (1).jpg');
+            background-repeat: no-repeat;
+            background-size: 1920px 1080px;
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+            margin: 0em;
+
+        }
+
+        ul * {
+            font-size: 1.5rem;
             line-height: 1.2;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(59, 43, 91, 0.7);
+            width: 265px;
+
         }
 
         fieldset {
-            background-color: white;
+            background-image: linear-gradient(180deg, rgb(215, 221, 134), rgb(209, 180, 167));
             width: 1000px;
+
+
         }
+
+        legend {
+            padding: 0em;
+
+        }
+
+        img,
+        fieldset {
+
+            border: 5px solid rgb(0, 0, 0);
+
+        }
+
 
         #linkedin {
 
             float: right;
             margin-top: -100px;
+
         }
 
         #github {
-
-
             float: right;
             margin-right: 50px;
             margin-top: -100px;
@@ -39,50 +86,156 @@
 
         a {
             color: inherit;
+            color: black;
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
         }
 
-        #start {
-            font-style: italic;
-            float: right;
-            margin-right: 700px;
-            margin-top: -100px;
-            font-size: 2.0em;
+        a:hover {
+            color: rgba(128, 128, 128, 0.5);
         }
 
-        #about {
-            font-style: italic;
-            float: right;
-            margin-right: 600px;
-            margin-top: -118px;
-            font-size: 2.0em;
+
+
+        /* Använder inga länkadresser (förutom i ikoner) därför syns inte denna men jag vet hur den fungerar... */
+        a:link {
+            color: rgb(235, 17, 17);
         }
 
-        #cv {
-            font-style: italic;
+
+
+
+        .start:visited {
+            color: rgb(235, 17, 17);
+        }
+
+
+        .start:active {
+            color: blue;
+        }
+
+
+
+        .start {
+            font-family: 'Source Code Pro', monospace;
             float: right;
-            margin-right: 530px;
-            margin-top: -137px;
-            font-size: 2.0em;
+            margin-right: 670px;
+            margin-top: -120px;
+            font-size: 2.2em;
+            text-decoration: none;
+
+        }
+
+        .about {
+            font-family: 'Source Code Pro', monospace;
+            float: right;
+            margin-right: 610px;
+            margin-top: -138px;
+            font-size: 2.2em;
+            text-decoration: none;
+        }
+
+        .cv {
+            font-family: 'Source Code Pro', monospace;
+            float: right;
+            margin-right: 550px;
+            margin-top: -156px;
+            font-size: 2.2em;
+            text-decoration: none;
+        }
+
+        @media (min-width: 800px) {
+            .line {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: 1100px) {
+            fieldset {
+                width: 200px;
+            }
+
+            body {
+                background-image: url('./images/business-computer-contemporary-desk-218863.jpg');
+
+                margin-left: 10px;
+                margin-top: 130px;
+            }
+
+            div h1 {
+                font-size: 25px;
+            }
+
+            .start {
+                font-style: italic;
+                margin-top: -20px;
+                font-size: 35px;
+                text-decoration: none;
+            }
+
+            .about {
+                font-style: italic;
+                margin-top: -44px;
+                font-size: 35px;
+                text-decoration: none;
+            }
+
+            .cv {
+                font-style: italic;
+                margin-top: -57px;
+                font-size: 35px;
+                text-decoration: none;
+            }
+
+            #linkedin {
+
+                margin-right: 450px;
+                margin-top: -100px;
+
+            }
+
+            #github {
+
+                margin-right: 500px;
+                margin-top: -100px;
+
+            }
+
+
         }
     </style>
 </head>
 
-<body background="images/business-computer-contemporary-desk-218863 (1).jpg">
-
+<body>
+    <div>
+        <h1>MARCUS KLAESSON|CV</h1>
+    </div>
 
     <fieldset>
-        <legend><img src="images/Bild.jpg" alt="Bild">
+
+        <legend>
+            <img src="images/Bild.jpg" alt="Bild">
         </legend>
+
+
         <a href="https://www.linkedin.com/in/marcus-klaesson-640a51b7/" target="_blank">
             <i id="linkedin" class="fab fa-linkedin fa-3x"></i></a>
         <a href="https://github.com/marcusklaesson?tab=repositories" target="_blank">
             <i id="github" class="fab fa-github-square fa-3x" target="_blank"></i> <br></a>
 
+        <span>
+            <a class="start" href="index.html"><strong>Start</strong></a> <br>
+            <a class="about" href="about.html"><strong>Om</strong></a> <br>
+            <a class="cv" href="cv.html"><strong>CV</strong></a>
+        </span>
 
-        <a id="start" href="index.html">Start</a> <br>
-        <a id="about" href="about.html">About</a> <br>
-        <a id="cv" href="cv.html">CV</a>
+        <div>
 
+        </div>
 
     </fieldset>
 </body>

@@ -16,15 +16,16 @@
             margin-top: -50px;
         }
 
-        h1 {
+        div h1 {
             font-family: 'Source Code Pro', monospace;
             margin-left: 240px;
             margin-bottom: -100px;
             font-size: 50px;
+
         }
 
         body {
-            background-image: url('\business-computer-contemporary-desk-218863.jpg');
+            background-image: url('./images/business-computer-contemporary-desk-218863 (1).jpg');
             background-repeat: no-repeat;
             background-size: 1920px 1080px;
             margin-left: 100px;
@@ -38,19 +39,21 @@
 
         }
 
-        ul {
+        ul * {
             font-size: 1.5rem;
             line-height: 1.2;
             font-family: 'Roboto', sans-serif;
-            border: 2px solid black;
-            width: 280px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            box-shadow: 0 10px 50px rgba(59, 43, 91, 0.7);
+            width: 265px;
 
         }
 
         fieldset {
-            background-image: linear-gradient(180deg, #E6E6E6, #FF8552);
+            background-image: linear-gradient(180deg, rgb(215, 221, 134), rgb(209, 180, 167));
             width: 1000px;
-            border: 5px solid black;
+
 
         }
 
@@ -59,11 +62,13 @@
 
         }
 
-        img {
+        img,
+        fieldset {
 
-            border: 5px solid black;
+            border: 5px solid rgb(0, 0, 0);
 
         }
+
 
         #linkedin {
 
@@ -92,6 +97,27 @@
         a:hover {
             color: rgba(128, 128, 128, 0.5);
         }
+
+
+
+        /* Använder inga länkadresser (förutom i ikoner) därför syns inte denna men jag vet hur den fungerar... */
+        a:link {
+            color: rgb(235, 17, 17);
+        }
+
+
+
+
+        .start:visited {
+            color: rgb(235, 17, 17);
+        }
+
+
+        .start:active {
+            color: blue;
+        }
+
+
 
         .start {
             font-family: 'Source Code Pro', monospace;
@@ -134,13 +160,13 @@
             }
 
             body {
+                background-image: url('./images/business-computer-contemporary-desk-218863.jpg');
+
                 margin-left: 10px;
-                margin-top: 80px;
-
-
+                margin-top: 130px;
             }
 
-            h1 {
+            div h1 {
                 font-size: 25px;
             }
 
@@ -183,10 +209,11 @@
         }
     </style>
 </head>
-<!-- background="images/business-computer-contemporary-desk-218863 (1).jpg" -->
 
 <body>
-    <h1>MARCUS KLAESSON</h1>
+    <div>
+        <h1>MARCUS KLAESSON|Om</h1>
+    </div>
 
     <fieldset>
 
