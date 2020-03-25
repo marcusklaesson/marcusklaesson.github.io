@@ -30,17 +30,20 @@
             background-size: 1920px 1080px;
             margin-left: 100px;
             margin-top: 150px;
+            background-attachment: fixed;
+            background-position: 0 100%;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-family: 'Roboto', sans-serif;
             margin: 0em;
 
         }
 
-        ul * {
-            font-size: 1.5rem;
+        ul,
+        #courses {
+            font-size: 1.2rem;
             line-height: 1.2;
             font-family: 'Roboto', sans-serif;
             border: 2px solid #000;
@@ -164,6 +167,8 @@
 
                 margin-left: 10px;
                 margin-top: 130px;
+                background-attachment: fixed;
+                background-position: 0 100%;
             }
 
             div h1 {
@@ -240,7 +245,7 @@
                 Mölndal.
             </p>
             <p>Följande kurser har jag slutfört:</p>
-            <ul>
+            <ul id="courses">
                 <li>Androidutveckling (Java)</li>
                 <li>Swift</li>
                 <li>Objective-C</li>

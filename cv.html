@@ -24,35 +24,34 @@
 
         }
 
+        div h2 {
+            font-family: 'Source Code Pro', monospace;
+        }
+
         body {
             background-image: url('./images/business-computer-contemporary-desk-218863 (1).jpg');
             background-repeat: no-repeat;
             background-size: 1920px 1080px;
             margin-left: 100px;
             margin-top: 150px;
+            background-attachment: fixed;
+            background-position: 0 100%;
         }
 
+
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-family: 'Roboto', sans-serif;
             margin: 0em;
 
         }
 
-        ul * {
-            font-size: 1.5rem;
-            line-height: 1.2;
-            font-family: 'Roboto', sans-serif;
-            border: 2px solid #000;
-            border-radius: 10px;
-            box-shadow: 0 10px 50px rgba(59, 43, 91, 0.7);
-            width: 265px;
 
-        }
 
         fieldset {
             background-image: linear-gradient(180deg, rgb(215, 221, 134), rgb(209, 180, 167));
             width: 1000px;
+            height: 1620px;
 
 
         }
@@ -147,6 +146,59 @@
             text-decoration: none;
         }
 
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 1500px;
+
+        }
+
+        .grid-item {
+            text-align: center;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            margin-top: 60px;
+            height: 70px;
+            border: 2px solid #000;
+            border-radius: 10px;
+
+
+        }
+
+        .grid-item1 {
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 535px;
+            width: 320px;
+            border: 2px solid #000;
+            border-radius: 10px;
+
+
+        }
+
+        .grid-item2 {
+            text-align: center;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            height: 1080px;
+            width: 320px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        .grid-item3 {
+            text-align: center;
+            grid-column-start: 3;
+            height: 800px;
+            width: 320px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+
+
+
         @media (min-width: 800px) {
             .line {
                 display: none;
@@ -157,6 +209,7 @@
         @media (max-width: 1100px) {
             fieldset {
                 width: 200px;
+                height: 1880px;
             }
 
             body {
@@ -164,6 +217,9 @@
 
                 margin-left: 10px;
                 margin-top: 130px;
+                background-attachment: fixed;
+                background-position: 0 100%;
+
             }
 
             div h1 {
@@ -175,6 +231,8 @@
                 margin-top: -20px;
                 font-size: 35px;
                 text-decoration: none;
+                padding-right: 190px;
+
             }
 
             .about {
@@ -182,6 +240,7 @@
                 margin-top: -44px;
                 font-size: 35px;
                 text-decoration: none;
+                padding-right: 190px;
             }
 
             .cv {
@@ -189,19 +248,61 @@
                 margin-top: -57px;
                 font-size: 35px;
                 text-decoration: none;
+                padding-right: 190px;
             }
 
             #linkedin {
 
-                margin-right: 450px;
+                margin-right: 640px;
                 margin-top: -100px;
 
             }
 
             #github {
 
-                margin-right: 500px;
+                margin-right: 690px;
                 margin-top: -100px;
+
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                height: 1500px;
+
+            }
+
+            .grid-item {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                margin-top: 60px;
+                height: 70px;
+
+            }
+
+            .grid-item1 {
+                grid-column-start: 1;
+
+                height: 530px;
+                width: 320px;
+                margin-top: 30px;
+
+
+            }
+
+            .grid-item2 {
+                grid-column-start: 2;
+                height: 1080px;
+                width: 320px;
+
+            }
+
+            .grid-item3 {
+                grid-column-start: 1;
+                height: 800px;
+                width: 320px;
+                margin-top: -430px;
 
             }
 
@@ -232,12 +333,91 @@
             <a class="about" href="about.html"><strong>Om</strong></a> <br>
             <a class="cv" href="cv.html"><strong>CV</strong></a>
         </span>
+        <div class="grid-container">
+            <div class="grid-item" style="background-color: white;">
+                <p style="font-style: italic;">Min främsta styrka är att jag är en driven och ambitiös person som alltid
+                    ger 100% i varje uppdrag
+                    eller projekt</p>
+            </div>
+            <div class="grid-item1" style="background-color: wheat;">
+                <div>
+                    <h2>Utbildningar</h2>
+                    <p>
+                        <strong>Apputveckling inom Android & IOS, IT-Högskolan i Mölndal.</strong>
+                        Studier på 100%. Koda appar från grunden till färdig produkt. Kurserna innehåller flera
+                        programmeringsspråk,
+                        projektarbeten, projektstyrning och praktik. <br>
+                        <strong>sep 2019 - pågående</strong>
+                    </p> <br> <br>
+                    <p>
+                        <strong>El & Dataprogrammet med nätverksinriktning, NTI-gymnasiet Göteborg.</strong>
+                        Grundläggande kurser i El-lära och IT med inriktning nätverksteknik. <br>
+                        <strong>aug 2007 – jun 2010</strong>
+                    </p>
+                </div>
+            </div>
+            <div class=" grid-item2" style="background-color: yellowgreen;">
+                <div>
+                    <h2>Anställningar</h2>
+                    <p><strong>Circle K Sverige.</strong>
+                        Heltidssäljare på Munkebäck i Göteborg. Tjänsteledig för studier. <br>
+                        <strong>sep 2017 – sep 2019</strong>
+                    </p> <br> <br>
+                    <p><strong>Circle K Sverige.</strong>
+                        Tillförordnad Stationschef i Bollebygd med personalansvar, budget och uppsatta mål.
+                        Yttersta ansvar över säkerheten och miljön på stationen.
+                        <strong>Circle K egna Ledarskapsprogram utfört vår-höst 2016</strong> <br>
+                        <strong>april 2016 – sep 2017</strong>
+                    </p> <br> <br>
+                    <p><strong>Statoil Fuel & Retail Sverige.</strong>
+                        Extrajobb samt heltidssäljare på Munkebäck. Fast anställning sedan 2010. STF-tjänst i
+                        Kungsbacka, Varberg nord och
+                        Gårda. Har god erfarenhet av butiksdrift, biluthyrning, biltvätt, kontorsarbete samt
+                        personalansvar.
+                        Självständigt arbete med stort ansvar när stationschefen var borta. <br>
+                        <strong>nov 2010 – april 2016</strong>
+                    </p> <br> <br>
+                    <p><strong>Hem, Barcelona.</strong> <br>
+                        Kundtjänst och fakturaavdelning, försäljning av abonnemang och fakturafrågor över telefon. <br>
+                        <strong>aug – nov 2010</strong>
+                    </p>
+                </div>
+            </div>
+            <div class=" grid-item3" style="background-color: papayawhip;">
+                <div>
+                    <h2>Övrigt</h2>
+                    <h2>Datorkunskaper</h2>
 
-        <div>
+                    <p>Java</p>
+                    <p>C#</p>
+                    <p>Swift<p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Navision (bokföring)</p>
+                            <p>Word</p>
+                            <p>Excel</p>
+
+                            <h2>Språk</h2>
+                            <p>
+                                Svenska, modersmål
+                                Engelska, mycket bra i tal och skrift
+                                Tyska, mycket bra i tal och skrift
+                            </p>
+                            <h2>Fritidsintressen</h2>
+                            <p>Utanför jobbet ägnar jag mig tid till min sambo, innebandy och vänner.</p>
+                            <h2>Körkort</h2>
+                            <p>B-körkort, tillgång till bil.</p>
+                </div>
+            </div>
+
+
 
         </div>
 
+
+
     </fieldset>
+
 </body>
 
 </html>
