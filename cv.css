@@ -12,6 +12,7 @@
 
         div h2 {
             font-family: 'Source Code Pro', monospace;
+            text-align: center;
         }
 
         body {
@@ -27,7 +28,7 @@
 
         p {
             font-size: 1.2rem;
-            font-family: 'Roboto', sans-serif;
+            font-family: Georgia, serif;
             margin: 0em;
 
         }
@@ -35,9 +36,9 @@
 
 
         fieldset {
-            background-image: linear-gradient(180deg, rgb(215, 221, 134), rgb(209, 180, 167));
+             background-image: linear-gradient(300deg, rgb(159, 126, 105), rgb(210, 187, 160));
             width: 1000px;
-            height: 1620px;
+            height: 1030px;
 
 
         }
@@ -50,7 +51,8 @@
         img,
         fieldset {
 
-            border: 5px solid rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
 
         }
 
@@ -85,7 +87,7 @@
 
 
 
-        /* Använder inga länkadresser (förutom i ikoner) därför syns inte denna men jag vet hur den fungerar... */
+    
         a:link {
             color: rgb(235, 17, 17);
         }
@@ -134,51 +136,57 @@
 
         .grid-container {
             display: grid;
+            gap: 1.1em;
             grid-template-columns: 1fr 1fr 1fr;
-            height: 1500px;
-
+            height: 900px; 
+        
         }
 
         .grid-item {
             text-align: center;
             grid-column-start: 2;
             grid-column-end: 2;
-            margin-top: 60px;
-            height: 70px;
-            border: 2px solid #000;
+            grid-row-start: 2;
+            margin-top: -50px;
+            height: 90px;
+            width: 320px;
+            border: 1px solid #000;
             border-radius: 10px;
 
 
         }
 
         .grid-item1 {
-            text-align: center;
-            grid-column-start: 1;
+            grid-column-start: 2;
             grid-column-end: 2;
-            height: 535px;
+            grid-row-start: 2;
+            
+            margin-top: 80px;
+            height: 400px;
             width: 320px;
-            border: 2px solid #000;
+            border: 1px solid #000;
             border-radius: 10px;
 
 
         }
 
         .grid-item2 {
-            text-align: center;
-            grid-column-start: 2;
-            grid-column-end: 3;
-            height: 1080px;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            height: 760px;
             width: 320px;
-            border: 2px solid #000;
+            border: 1px solid #000;
             border-radius: 10px;
         }
 
         .grid-item3 {
             text-align: center;
             grid-column-start: 3;
-            height: 800px;
+            grid-row-start: 2;
+            
+            height: 600px;
             width: 320px;
-            border: 2px solid #000;
+            border: 1px solid #000;
             border-radius: 10px;
         }
 
@@ -195,7 +203,7 @@
         @media (max-width: 1100px) {
             fieldset {
                 width: 200px;
-                height: 1880px;
+                height: 2280px;
             }
 
             body {
@@ -223,7 +231,7 @@
 
             .about {
                 font-style: italic;
-                margin-top: -44px;
+                margin-top: -41px;
                 font-size: 35px;
                 text-decoration: none;
                 padding-right: 190px;
@@ -254,7 +262,7 @@
             .grid-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-
+                
                 height: 1500px;
 
             }
@@ -262,33 +270,39 @@
             .grid-item {
                 grid-column-start: 1;
                 grid-column-end: 2;
+                grid-row-start: 1;
                 margin-top: 60px;
-                height: 70px;
+                height: 90px;
+            
 
             }
 
             .grid-item1 {
                 grid-column-start: 1;
-
-                height: 530px;
+                grid-row-start: 2;
+                height: 400px;
                 width: 320px;
                 margin-top: 30px;
+                
 
 
             }
 
             .grid-item2 {
-                grid-column-start: 2;
-                height: 1080px;
+                grid-column-start: 1;
+                grid-row-start: 3;
+                height: 760px;
                 width: 320px;
-
+                margin-top: 30px;
             }
 
             .grid-item3 {
                 grid-column-start: 1;
-                height: 800px;
+                grid-row-start: 4;
+                height: 600px;
                 width: 320px;
-                margin-top: -430px;
+                margin-top: 30px;
+                
 
             }
 
