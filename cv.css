@@ -36,7 +36,7 @@
 
 
         fieldset {
-             background-image: linear-gradient(300deg, rgb(159, 126, 105), rgb(210, 187, 160));
+             background-color: rgba(255, 255, 255, 0.9);
             width: 1000px;
             height: 1030px;
 
@@ -84,27 +84,6 @@
         a:hover {
             color: rgba(128, 128, 128, 0.5);
         }
-
-
-
-    
-        a:link {
-            color: rgb(235, 17, 17);
-        }
-
-
-
-
-        .start:visited {
-            color: rgb(235, 17, 17);
-        }
-
-
-        .start:active {
-            color: blue;
-        }
-
-
 
         .start {
             font-family: 'Source Code Pro', monospace;
