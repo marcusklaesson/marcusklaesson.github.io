@@ -3,7 +3,7 @@
     <sequential-entrance>
       <div class="columns">
         <div class="column">
-          <h1 class="title" style="color:red">Chat application made with Java</h1>
+          <h1 class="title" style="color:red">Java chat application</h1>
           <div>
             <a class="chatt" href="https://github.com/marcusklaesson/WhatAMess" target="_blank">
               <img class="appIMG" src="../assets/WhatAMess.jpg" alt="WhatAMess" />
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="column">
-          <h1 class="title" style="color:red">Recipe application made with Swift</h1>
+          <h1 class="title" style="color:red">Swift recipe application</h1>
           <div>
             <a class="foodbank" href="https://github.com/marcusklaesson" target="_blank">
               <img class="appIMG" src="../assets/Foodbank.png" alt="FoodBank" />
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="column">
-          <h1 class="title" style="color:red">Weather application made with Java</h1>
+          <h1 class="title" style="color:red">Java weather application</h1>
           <div>
             <a class="weather" href="https://github.com/marcusklaesson/WheaterApp" target="_blank">
               <img class="appIMG" src="../assets/WeatherApp.png" alt="WeatherApp" />
@@ -39,4 +39,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.appIMG {
+  width: 300px;
+}
 </style>

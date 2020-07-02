@@ -3,7 +3,7 @@
     <nav class="navbar is-fixed-top is-dark">
       <div class="container">
         <div class="navbar-brand">
-          <h1 class="title" style="color:whitesmoke">Marcus Klaesson</h1>
+          <h1 class="title" style="color:whitesmoke">Marcus Klaesson | App-developer</h1>
           <span class="navbar-burger burger" data-target="navbarMenuHeroA">
             <span></span>
             <span></span>
@@ -31,6 +31,17 @@
         </div>
       </div>
     </nav>
+    <div class="carousel">
+      <b-carousel>
+        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+          <section class="hero is-small">
+            <div class="hero-body has-text-centered">
+              <img class="carouselImg" :src="carousel.image" />
+            </div>
+          </section>
+        </b-carousel-item>
+      </b-carousel>
+    </div>
     <About id="about"></About>
     <br />
     <br />
@@ -57,22 +68,50 @@
 <script>
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Foodbank from "./assets/Foodbank.png";
 export default {
   name: "App",
   components: {
     About,
     Portfolio
+  },
+  data() {
+    return {
+      carousels: [
+        { image: require("./assets/Foodbank.png") },
+        { image: require("./assets/WeatherApp.png") },
+        { image: require("./assets/WhatAMess.jpg") }
+      ]
+    };
   }
 };
 </script>
 
 <style>
 .title {
-  margin-top: 10px;
+  margin-top: 13px;
 }
 .fab {
   color: white !important;
 }
+.carousel {
+  width: 500px;
+  left: 570px;
+  top: 70px;
+}
+
+.carouselImg {
+  height: 400px;
+  width: 200px;
+}
+
+#about {
+  bottom: 300px;
+}
+#portfolio {
+  bottom: 200px;
+}
+
 a:hover {
   color: rgba(128, 128, 128, 0.5);
 }
