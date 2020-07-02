@@ -3,47 +3,58 @@
     <nav class="navbar is-fixed-top is-dark">
       <div class="container">
         <div class="navbar-brand">
-          <h1 class="title" style="color:whitesmoke">Marcus Klaesson | App-developer</h1>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
+          <h1 id="titleNav" class="title" style="color:whitesmoke">Marcus Klaesson | App-developer |</h1>
+
+          <span class="navbar-item">
+            <i id="one" class="fab fa-java fa-2x"></i>
           </span>
+          <span class="navbar-item">
+            <i class="fab fa-js-square fa-2x"></i>
+          </span>
+          <span class="navbar-item">
+            <i class="fab fa-react fa-2x"></i>
+          </span>
+          <span class="navbar-item">
+            <i class="fab fa-vuejs fa-2x"></i>
+          </span>
+          <span class="navbar-item">
+            <i class="fab fa-android fa-2x"></i>
+          </span>
+          <span class="navbar-item">
+            <i class="fab fa-apple fa-2x"></i>
+          </span>
+
+          <button
+            @click="makeBurger"
+            class="button navbar-burger is-dark"
+            data-target="navMenu"
+            v-bind:class="{ 'is-active': activator }"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a class="navbar-item" href="#about">About</a>
-            <a class="navbar-item" href="#portfolio">Portfolio</a>
-            <span class="navbar-item">
-              <span class="icon">
-                <br />
-                <a href="https://github.com/marcusklaesson?tab=repositories" target="_blank">
-                  <i class="fab fa-github fa-2x"></i>
-                </a>
-              </span>
-            </span>
-            <span class="navbar-item">
-              <a href="https://www.linkedin.com/in/marcus-klaesson-640a51b7/" target="_blank">
-                <i class="fab fa-linkedin fa-2x"></i>
-              </a>
-            </span>
-          </div>
+      </div>
+      <div class="navbar-menu" id="navMenu" v-bind:class="{ 'is-active': activator }">
+        <div class="navbar-end">
+          <a class="navbar-item" href="#about" style="color:white">About</a>
+          <a class="navbar-item" href="#portfolio" style="color:white">Portfolio</a>
+          <span class="navbar-item">
+            <br />
+            <a href="https://github.com/marcusklaesson?tab=repositories" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+          </span>
+          <span class="navbar-item">
+            <a href="https://www.linkedin.com/in/marcus-klaesson-640a51b7/" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </span>
         </div>
       </div>
     </nav>
-    <sequential-entrance fromTop>
-      <div class="carousel">
-        <b-carousel>
-          <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-            <section class="hero is-small">
-              <div class="hero-body has-text-centered">
-                <img class="carouselImg" :src="carousel.image" />
-              </div>
-            </section>
-          </b-carousel-item>
-        </b-carousel>
-      </div>
-    </sequential-entrance>
+    <Carousel></Carousel>
     <About id="about"></About>
     <br />
     <br />
@@ -70,48 +81,47 @@
 <script>
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Foodbank from "./assets/Foodbank.png";
+import Carousel from "./components/Carousel";
 export default {
   name: "App",
   components: {
     About,
-    Portfolio
+    Portfolio,
+    Carousel
   },
+  methods: {
+    makeBurger() {
+      this.activator = !this.activator;
+      return this.activator;
+    }
+  },
+
   data() {
     return {
-      carousels: [
-        { image: require("./assets/Foodbank.png") },
-        { image: require("./assets/WeatherApp.png") },
-        { image: require("./assets/WhatAMess.jpg") }
-      ]
+      activator: false
     };
   }
 };
 </script>
 
 <style>
-.title {
-  margin-top: 13px;
+#titleNav {
+  margin-top: 14px;
+  margin-left: 50px;
 }
-.fab {
-  color: white !important;
-}
-.carousel {
-  width: 500px;
-  left: 570px;
-  top: 70px;
+#navMenu {
+  margin-right: 50px;
 }
 
-.carouselImg {
-  height: 400px;
-  width: 200px;
+.fab {
+  color: white !important;
 }
 
 #about {
   bottom: 250px;
 }
 #portfolio {
-  bottom: 200px;
+  bottom: 100px;
 }
 
 a:hover {
@@ -130,5 +140,13 @@ a:hover {
 .navbar-item:hover {
   opacity: 0.4;
   color: rgba(128, 128, 128, 0.5);
+}
+@media (max-width: 1024px) {
+  .fab {
+    color: white !important;
+  }
+  #navMenu {
+    background-color: #363636;
+  }
 }
 </style>
