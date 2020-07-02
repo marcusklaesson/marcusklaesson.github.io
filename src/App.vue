@@ -31,17 +31,19 @@
         </div>
       </div>
     </nav>
-    <div class="carousel">
-      <b-carousel>
-        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-          <section class="hero is-small">
-            <div class="hero-body has-text-centered">
-              <img class="carouselImg" :src="carousel.image" />
-            </div>
-          </section>
-        </b-carousel-item>
-      </b-carousel>
-    </div>
+    <sequential-entrance fromTop>
+      <div class="carousel">
+        <b-carousel>
+          <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
+            <section class="hero is-small">
+              <div class="hero-body has-text-centered">
+                <img class="carouselImg" :src="carousel.image" />
+              </div>
+            </section>
+          </b-carousel-item>
+        </b-carousel>
+      </div>
+    </sequential-entrance>
     <About id="about"></About>
     <br />
     <br />
@@ -106,7 +108,7 @@ export default {
 }
 
 #about {
-  bottom: 300px;
+  bottom: 250px;
 }
 #portfolio {
   bottom: 200px;

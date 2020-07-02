@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <sequential-entrance>
+    <sequential-entrance fromTop>
       <figure class="image">
         <img src="../assets/MKL.jpg" />
       </figure>
