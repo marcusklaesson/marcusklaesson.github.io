@@ -130,12 +130,6 @@ export default {
   color: white !important;
 }
 
-#about {
-  bottom: 50px;
-}
-#portfolio {
-  bottom: 50px;
-}
 a:hover {
   color: rgba(128, 128, 128, 0.5);
 }
