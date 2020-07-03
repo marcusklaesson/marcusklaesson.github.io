@@ -1,29 +1,29 @@
 <template>
   <div id="app">
-    <nav class="navbar is-fixed-top is-dark">
+    <nav class="navbar is-fixed-top is-dark" style="opacity: 90%;">
       <div class="container">
         <div class="navbar-brand">
-          <h1 id="titleNav" class="title" style="color:whitesmoke">Marcus Klaesson | App-developer |</h1>
-
-          <span class="navbar-item">
-            <i id="one" class="fab fa-java fa-2x"></i>
-          </span>
-          <span class="navbar-item">
-            <i class="fab fa-js-square fa-2x"></i>
-          </span>
-          <span class="navbar-item">
-            <i class="fab fa-react fa-2x"></i>
-          </span>
-          <span class="navbar-item">
-            <i class="fab fa-vuejs fa-2x"></i>
-          </span>
-          <span class="navbar-item">
-            <i class="fab fa-android fa-2x"></i>
-          </span>
-          <span class="navbar-item">
-            <i class="fab fa-apple fa-2x"></i>
-          </span>
-
+          <h1 id="titleNav" class="title" style="color:whitesmoke">Marcus Klaesson | App Developer |</h1>
+          <div class="langIcons">
+            <span class="navbar-item">
+              <i id="one" class="fab fa-java fa-2x"></i>
+            </span>
+            <span class="navbar-item">
+              <i class="fab fa-js-square fa-2x"></i>
+            </span>
+            <span class="navbar-item">
+              <i class="fab fa-react fa-2x"></i>
+            </span>
+            <span class="navbar-item">
+              <i class="fab fa-vuejs fa-2x"></i>
+            </span>
+            <span class="navbar-item">
+              <i class="fab fa-android fa-2x"></i>
+            </span>
+            <span class="navbar-item">
+              <i class="fab fa-apple fa-2x"></i>
+            </span>
+          </div>
           <button
             @click="makeBurger"
             class="button navbar-burger is-dark"
@@ -54,7 +54,6 @@
         </div>
       </div>
     </nav>
-    <Carousel></Carousel>
     <About id="about"></About>
     <br />
     <br />
@@ -81,13 +80,12 @@
 <script>
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Carousel from "./components/Carousel";
+
 export default {
   name: "App",
   components: {
     About,
-    Portfolio,
-    Carousel
+    Portfolio
   },
   methods: {
     makeBurger() {
@@ -105,12 +103,26 @@ export default {
 </script>
 
 <style>
+#app {
+  background-image: url("./assets/Sky.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+}
+
 #titleNav {
   margin-top: 14px;
   margin-left: 50px;
+  font-variant-caps: all-small-caps;
+  font-size: 35px;
 }
 #navMenu {
   margin-right: 50px;
+  font-variant-caps: all-small-caps;
+  font-size: 23px;
+}
+.langIcons {
+  display: flex;
 }
 
 .fab {
@@ -118,10 +130,13 @@ export default {
 }
 
 #about {
-  bottom: 250px;
+  bottom: 50px;
 }
 #portfolio {
-  bottom: 100px;
+  top: 0px;
+}
+.footer {
+  margin-top: 0px;
 }
 
 a:hover {
@@ -147,6 +162,11 @@ a:hover {
   }
   #navMenu {
     background-color: #363636;
+  }
+}
+@media (max-width: 1188px) {
+  .langIcons {
+    display: none;
   }
 }
 </style>

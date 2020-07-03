@@ -1,10 +1,11 @@
 <template>
   <div class="container">
-    <sequential-entrance fromTop>
+    <sequential-entrance fromLeft>
       <figure class="image">
-        <img src="../assets/MKL.jpg" />
+        <img class="imageTop" src="../assets/MKL.png" />
       </figure>
     </sequential-entrance>
+
     <sequential-entrance>
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">
@@ -79,21 +80,23 @@
                 <li>More to come...</li>
               </dd>
               <div class="GTK">
-                <h1 class="title" style="color:red">Good to know</h1>
-                <ul>
-                  <h2 class="subtitle" style="color:red">Language</h2>
-                  <li class="listItem1">
-                    Swedish, native language.
-                    <br />English good in speech and writing.
-                    <br />German, good in speech and writing.
-                  </li>
-                  <h2 class="subtitle" style="color:red">Hobbies</h2>
-                  <li
-                    class="listItem2"
-                  >Outside of work, I spend time with my partner, floorball and friends.</li>
-                  <h2 class="subtitle" style="color:red">Driving license</h2>
-                  <li class="listItem3">B-driving license, access to car.</li>
-                </ul>
+                <div class="GTKTEXT">
+                  <h1 class="title" style="color:red">Good to know</h1>
+                  <ul>
+                    <h2 class="subtitle" style="color:red">Language</h2>
+                    <li class="listItem1">
+                      Swedish, native language.
+                      <br />English good in speech and writing.
+                      <br />German, good in speech and writing.
+                    </li>
+                    <h2 class="subtitle" style="color:red">Hobbies</h2>
+                    <li
+                      class="listItem2"
+                    >Outside of work, I spend time with my partner, floorball and friends.</li>
+                    <h2 class="subtitle" style="color:red">Driving license</h2>
+                    <li class="listItem3">B-driving license, access to car.</li>
+                  </ul>
+                </div>
               </div>
             </article>
           </div>
@@ -111,9 +114,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.image {
-  width: 300px;
-  border: solid 1px;
+.imageTop {
+  width: 600px;
+  margin-bottom: -163px;
+  margin-left: -120px;
 }
 .tile {
   margin-top: 20px;
@@ -133,6 +137,12 @@ export default {
 }
 .subtitle {
   margin-top: 10px;
+  font-variant-caps: all-small-caps;
+  font-size: 25px;
+}
+.title {
+  font-variant-caps: all-small-caps;
+  font-size: 35px;
 }
 .GTK {
   margin-top: 200px;

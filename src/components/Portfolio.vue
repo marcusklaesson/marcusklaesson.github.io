@@ -40,6 +40,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .appIMG {
+  height: 600px;
   width: 300px;
+  border-radius: 10px;
+}
+.title {
+  font-variant-caps: all-small-caps;
+  font-size: 35px;
 }
 </style>
