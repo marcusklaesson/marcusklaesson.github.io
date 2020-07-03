@@ -117,7 +117,7 @@ export default {
 <style scoped>
 .imageTop {
   width: 600px;
-  margin-bottom: -163px;
+  margin-bottom: -183px;
 }
 .tile {
   margin-top: 20px;
