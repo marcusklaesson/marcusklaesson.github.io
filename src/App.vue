@@ -108,7 +108,6 @@ export default {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-
   font-family: "Open Sans", sans-serif;
 }
 
@@ -137,10 +136,6 @@ export default {
 #portfolio {
   bottom: 50px;
 }
-.footer {
-  margin-top: 0px;
-}
-
 a:hover {
   color: rgba(128, 128, 128, 0.5);
 }
