@@ -1,11 +1,12 @@
 <template>
   <div class="container">
-    <sequential-entrance fromLeft>
-      <figure class="image">
-        <img class="imageTop" src="../assets/MKL.png" />
-      </figure>
-    </sequential-entrance>
-
+    <div class="imageTop">
+      <sequential-entrance fromLeft>
+        <figure class="image">
+          <img src="../assets/MKL.png" />
+        </figure>
+      </sequential-entrance>
+    </div>
     <sequential-entrance>
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-8">
@@ -116,8 +117,7 @@ export default {
 <style scoped>
 .imageTop {
   width: 600px;
-  margin-bottom: -163px;
-  margin-left: -120px;
+  height: 530px;
 }
 .tile {
   margin-top: 20px;

@@ -107,6 +107,8 @@ export default {
   background-image: url("./assets/Sky.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
+
   font-family: "Open Sans", sans-serif;
 }
 
@@ -133,7 +135,7 @@ export default {
   bottom: 50px;
 }
 #portfolio {
-  top: 0px;
+  bottom: 50px;
 }
 .footer {
   margin-top: 0px;
