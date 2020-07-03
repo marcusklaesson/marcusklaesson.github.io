@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+# --allow-unrelated-histories
 # abort on errors
 set -e
 
