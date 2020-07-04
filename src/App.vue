@@ -3,27 +3,7 @@
     <nav class="navbar is-fixed-top is-dark" style="opacity: 90%;">
       <div class="container">
         <div class="navbar-brand">
-          <h1 id="titleNav" class="title" style="color:whitesmoke">Marcus Klaesson | App Developer |</h1>
-          <div class="langIcons">
-            <span class="navbar-item">
-              <i id="one" class="fab fa-java fa-2x"></i>
-            </span>
-            <span class="navbar-item">
-              <i class="fab fa-js-square fa-2x"></i>
-            </span>
-            <span class="navbar-item">
-              <i class="fab fa-react fa-2x"></i>
-            </span>
-            <span class="navbar-item">
-              <i class="fab fa-vuejs fa-2x"></i>
-            </span>
-            <span class="navbar-item">
-              <i class="fab fa-android fa-2x"></i>
-            </span>
-            <span class="navbar-item">
-              <i class="fab fa-apple fa-2x"></i>
-            </span>
-          </div>
+          <h1 id="titleNav" class="title" style="color:whitesmoke">Marcus Klaesson | App Developer</h1>
           <button
             @click="makeBurger"
             class="button navbar-burger is-dark"
@@ -38,8 +18,18 @@
       </div>
       <div class="navbar-menu" id="navMenu" v-bind:class="{ 'is-active': activator }">
         <div class="navbar-end">
-          <a class="navbar-item" href="#about" style="color:white">About</a>
-          <a class="navbar-item" href="#portfolio" style="color:white">Portfolio</a>
+          <a
+            class="navbar-item"
+            href="#about"
+            v-smooth-scroll="{ duration: 800, offset: 150 }"
+            style="color:white"
+          >About</a>
+          <a
+            class="navbar-item"
+            href="#portfolio"
+            v-smooth-scroll="{ duration: 800, offset: -100 }"
+            style="color:white"
+          >Portfolio</a>
           <span class="navbar-item">
             <br />
             <a href="https://github.com/marcusklaesson?tab=repositories" target="_blank">
@@ -109,6 +99,7 @@ export default {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Open Sans", sans-serif;
+  font-size: 17px;
 }
 
 #titleNav {
@@ -122,12 +113,15 @@ export default {
   font-variant-caps: all-small-caps;
   font-size: 23px;
 }
-.langIcons {
-  display: flex;
-}
 
 .fab {
   color: white !important;
+}
+#about {
+  bottom: 80px;
+}
+.footer {
+  margin-top: 200px;
 }
 
 a:hover {
@@ -153,11 +147,6 @@ a:hover {
   }
   #navMenu {
     background-color: #363636;
-  }
-}
-@media (max-width: 1188px) {
-  .langIcons {
-    display: none;
   }
 }
 </style>
