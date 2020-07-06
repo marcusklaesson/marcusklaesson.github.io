@@ -14,17 +14,17 @@
               <article class="tile is-child box">
                 <h1 class="title">Hi!</h1>
                 <p>
-                  My name is Marcus Klaesson and im 29 years old from Gothenburg, Sweden.
-                  Im studying my second term as an app developer at IT-Högskolan in Mölndal.
-                  I have a 9 year long career from Circle K Sweden, there i have worked as a salesmen, car rental
+                  My name is Marcus Klaesson and i'm 29 years old from Gothenburg, Sweden.
+                  I'm studying my second term as an app developer at IT-Högskolan in Mölndal, Gothenburg.
+                  I have a 9 year long career from Circle K Sweden, where i worked as a salesmen, car rental
                   responsible, deputy station manager and station manager.
                 </p>
                 <h2 class="subtitle">Goals</h2>
                 <p class="pItem1">
-                  My goal when i finish my studies in june 2021 is to find a creative company that put costumers in focus to deliver
+                  My goal when i finish my studies in june 2021 is to find a creative company that puts costumers in focus to deliver
                   good and easy applications for them to use. And i think taking care of the personnel you have is a key factor to success in companies today.
                   <br />
-                  <br />The dream goal is to start a company with a around 5-10 employess that build apps to private people and companies.
+                  <br />My dream is to start a company with around 5-10 employees that build apps to private people and companies.
                 </p>
               </article>
 
@@ -34,12 +34,12 @@
                 <h2 class="subtitle">Circle K</h2>
                 <p class="pItem1">
                   Car rental
-                  responsible | sep 2017–aug 2019
+                  responsible | sep 2017 – aug 2019
                 </p>Gothenburg, Sweden
-                <p>Car rental responsible at Munkebäck station with a park of about 50 vehicles. The job includes servicing cars, repairing, inspecting, car planning, talking to suppliers, training staff and cleaning cars.</p>
+                <p>Responsible for the car rental at Munkebäck station with a park of about 50 vehicles. The job includes service on cars, repairing, inspecting, car planning, talking to suppliers, training staff and cleaning cars.</p>
                 <br />Acting Head of Station | april 2016 - sep 2017
                 <br />Bollebygd, Sweden
-                <br />Acting Head of Station in Bollebygd with personnel responsibility, budget and setting goals. Ultimate responsibility for the safety and the environment at the station. Circle K's own Leadership program conducted spring-autumn 2016.
+                <br />Acting station manager in Bollebygd with personnel responsibility, budget and setting goals. Ultimate responsibility for the safety and the environment at the station. Circle K's own Leadership program conducted spring-autumn 2016.
                 <br />
                 <br />
                 <h2 class="subtitle">Statoil Fuel & Retail</h2>
@@ -60,9 +60,9 @@
               <p></p>
               <h2 class="subtitle">App developer</h2>
               <p class="pItem1">sep 2019 - ongoing</p>IT-Högskolan Mölndal, Sweden
-              <br />App development within Android & IOS. Fulltime studies, coding apps from scratch to finished product. The courses contain several programming languages, project work, project management and practice.
+              <br />App development within Android & IOS. Full time studies, coding apps from scratch to finished product. The courses contain several programming languages, project work, project management and practice.
               <h2 class="subtitle">Electric & Dataprogram</h2>
-              <p class="pItem1">aug 2007 - jun 2010</p>NTI-upper secondary school Gothenburg, Sweden
+              <p class="pItem1">aug 2007 - jun 2010</p>NTI high school Gothenburg, Sweden
               <br />Basic courses in electrical learning and IT with specialization in network technology.
             </article>
           </div>
@@ -92,13 +92,13 @@
                     <h2 class="subtitle">Language</h2>
                     <li class="listItem1">
                       Swedish, native language.
-                      <br />English fluent in speaking and writing.
+                      <br />English, fluent in speaking and writing.
                       <br />German, good in speaking and writing.
                     </li>
                     <h2 class="subtitle">Hobbies</h2>
                     <p class="listItem2">
-                      In my spare time i spend time with my girlfriend, and i train alot in the gym and in winters i play floorball in Kortedalarna division 4.
-                      I also gaming and coding at home besides school.
+                      In my spare time i spend time with my girlfriend, work out in the gym and during the winter season I play floorball in Division 4.
+                      I also enjoy gaming and coding at home in addition to school.
                     </p>
                     <h2 class="subtitle">Driving license</h2>
                     <p class="listItem3">B-driving license, access to car.</p>

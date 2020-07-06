@@ -31,7 +31,7 @@
               </template>
               <template v-slot:back>
                 <p>
-                  Problem with recipes on paper thats hard to find when you need them? This app got you covered, FoodBank saves
+                  Problem with recipes on paper that's hard to find when you need them? This app got you covered, FoodBank saves
                   your favorite recipes in the app so you can reach them easily while cooking.
                   <br />
                   <br />Language: Swift
@@ -51,8 +51,8 @@
               </template>
               <template v-slot:back>
                 <p>
-                  Need to find weather info fast of your favorite places? Weather App lets you search of weathers
-                  of the whole world.
+                  Need to find weather info fast at your favorite places? Weather App lets you search for weathers
+                  in the whole world.
                   <br />
                   <br />Language: Java
                   <br />API: Openweathermap
