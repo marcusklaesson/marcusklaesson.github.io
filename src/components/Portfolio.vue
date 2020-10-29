@@ -3,60 +3,81 @@
     <sequential-entrance>
       <div class="columns">
         <div class="column">
-          <h1 class="title" style="padding-left:70px">What A Mess</h1>
           <div>
             <vue-flip active-hover width="300px" height="600px">
               <template v-slot:front>
-                <img class="appIMG" src="../assets/WhatAMess.jpg" alt="WhatAMess" />
+                <img
+                  class="appIMG"
+                  src="../assets/WhatAMess.jpg"
+                  alt="WhatAMess"
+                />
               </template>
               <template v-slot:back>
-                <p>
-                  Simple chat application that let you chat with your friends any time of the day.
-                  The app has a group chat included and you can style your own profile and change your username.
-                  Media files can be send to your friends to share experiences.
-                  <br />
-                  <br />Language: Java
-                  <br />Database: Firebase
-                </p>
+                <div class="background_projects">
+                  <h1 class="title">What A Mess</h1>
+                  <p>
+                    Is a simple chat application that let you chat with your
+                    friends any time of the day. The app has a group chat
+                    included and you can style your own profile and change your
+                    username. Media files can be send to your friends to share
+                    experiences.
+                    <br />
+                    <br />Language: Java <br />Database: Firebase
+                  </p>
+                </div>
               </template>
             </vue-flip>
           </div>
         </div>
         <div class="column">
-          <h1 class="title" style="padding-left:70px">Food Bank</h1>
           <div>
             <vue-flip active-hover width="300px" height="600px">
               <template v-slot:front>
-                <img class="appIMG" src="../assets/Foodbank.png" alt="FoodBank" />
+                <img
+                  class="appIMG"
+                  src="../assets/Foodbank.png"
+                  alt="FoodBank"
+                />
               </template>
               <template v-slot:back>
-                <p>
-                  Problem with recipes on paper that's hard to find when you need them? This app got you covered, FoodBank saves
-                  your favorite recipes in the app so you can reach them easily while cooking.
-                  <br />
-                  <br />Language: Swift
-                  <br />Database: Firebase
-                  <br />API: Spoonacular
-                </p>
+                <div class="background_projects">
+                  <h1 class="title">Food Bank</h1>
+                  <p>
+                    The problem solver when you have recipes on paper that's
+                    hard to find when you need them? This app got you covered,
+                    FoodBank saves your favorite recipes in the app so you can
+                    reach them easily while cooking.
+                    <br />
+                    <br />Language: Swift <br />Database: Firebase <br />API:
+                    Spoonacular
+                  </p>
+                </div>
               </template>
             </vue-flip>
           </div>
         </div>
         <div class="column">
-          <h1 class="title" style="padding-left:70px">Weather App</h1>
           <div>
             <vue-flip active-hover width="300px" height="600px">
               <template v-slot:front>
-                <img class="appIMG" src="../assets/WeatherApp.png" alt="WeatherApp" />
+                <img
+                  class="appIMG"
+                  src="../assets/WeatherApp.png"
+                  alt="WeatherApp"
+                />
               </template>
               <template v-slot:back>
-                <p>
-                  Need to find weather info fast at your favorite places? Weather App lets you search for weathers
-                  in the whole world.
-                  <br />
-                  <br />Language: Java
-                  <br />API: Openweathermap
-                </p>
+                <div class="background_projects">
+                  <h1 class="title">Weather App</h1>
+                  <p>
+                    Is a simple wheater app when you need to find weather info
+                    fast of your favorite places. Weather App lets you search
+                    for weathers in the whole world and displays it with
+                    relevent info.
+                    <br />
+                    <br />Language: Java <br />API: Openweathermap
+                  </p>
+                </div>
               </template>
             </vue-flip>
           </div>
@@ -71,8 +92,8 @@ import VueFlip from "vue-flip";
 export default {
   name: "Portfolio",
   components: {
-    "vue-flip": VueFlip
-  }
+    "vue-flip": VueFlip,
+  },
 };
 </script>
 
@@ -88,5 +109,12 @@ export default {
   font-variant-caps: all-small-caps;
   font-size: 35px;
   color: black;
+}
+.background_projects {
+  height: 600px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: snow;
+  padding: 20px;
 }
 </style>
